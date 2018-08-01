@@ -1,0 +1,597 @@
+body{
+     background: white no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     font-family:'HelveticaNeue','Arial', sans-serif;
+}
+
+a {
+     color:#75146e;
+     text-decoration: none;
+}
+
+a:hover {
+     color:#aaa;
+     text-decoration: none; 
+}
+
+.pull-right {
+     float: right;
+}
+
+.pull-left {
+     float: left;
+}
+
+.clear-fix {
+     clear: both;
+}
+
+div.logo {
+     text-align: center;
+     margin: 20px 20px 30px 20px;
+     fill: #566375;
+}
+
+div.logo svg{
+     width:180px;
+     height:100px;
+}
+
+.logo-active{
+     fill: #44aacc !important;
+}
+
+#formWrapper {
+     background: rgba(0,0,0,.2); 
+     width:100%;
+         min-height: 100%;
+    height: inherit;
+     position: absolute; 
+     top:0; 
+     left:0;
+     transition:all .3s ease;
+}
+     
+.darken-bg {
+     background: rgba(0,0,0,.5) !important;
+     transition:all .3s ease;
+}
+
+div#form{
+	position: absolute;
+	width:360px;
+	height:320px;
+	height:auto;
+	background-color: #fff;
+	margin:auto;
+	border-radius: 5px;
+	padding:20px;
+	left:50%;
+	top:50%;
+	margin-left:-180px;
+	margin-top:-200px;
+}
+
+div.form-item {
+     position: relative;
+     display: block;
+     margin-bottom: 20px;
+}
+
+input {
+     transition: all .2s ease;
+}
+
+input.form-style {
+	color:#8a8a8a;
+	display: block;
+	width: 90%;
+	height: 44px;
+	padding: 5px 5%;
+	border:1px solid #ccc;
+	-moz-border-radius: 27px;
+	-webkit-border-radius: 27px;
+	border-radius: 27px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #fff;
+	font-family:'HelveticaNeue','Arial', sans-serif;
+	font-size: 105%;
+	letter-spacing: .8px;
+}
+
+div.form-item .form-style:focus {
+     outline: none;
+     border: 1px solid #75146e;
+     color: #75146e;
+}
+
+div.form-item p.formLabel {
+	position: absolute;
+	left:26px;
+	top:2px;
+	transition:all .4s ease;
+	color:#bbb;
+}
+
+.formTop {
+     top:-22px !important;
+     left:26px; background-color: #fff;
+     padding:0 5px;
+     font-size: 14px;
+     color:#75146e !important;
+}
+
+.formStatus {
+     color:#8a8a8a !important;
+}
+
+input[type="submit"].login{
+	float:right;
+	width: 41%;
+    height: 31px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #6e0d67;
+	border:1px solid #6e0d67;
+	border:none;
+	color: #fff;
+	font-weight: bold;
+}
+
+input[type="submit"].login:hover {
+     background-color: #fff;
+     border:1px solid #6e0d67;
+     color:#6e0d67;
+     cursor:pointer;
+}
+
+input[type="submit"].login:focus {
+     outline: none;
+}
+
+/* ONLY REGISTER */
+.form-style-5{
+    max-width: 680px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+        margin-top: 3%;
+}
+.form-style-5 legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    width: 26%;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="password"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 19%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    margin-right: 8%;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="password"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #75146e;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    padding: 11px 39px 10px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #75146e;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #6e0d67;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #85237e;
+}
+
+.btn-radio {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.btn-radio:not(:first-child) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 480px) {
+  .btn-radio {
+    display: block;
+    float: none;
+  }
+  .btn-radio:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+.btn-radio svg {
+  fill: none;
+  vertical-align: middle;
+}
+.btn-radio svg circle {
+  stroke-width: 2;
+  stroke: #C8CCD4;
+}
+.btn-radio svg path {
+  stroke: #85237e;
+}
+.btn-radio svg path.inner {
+  stroke-width: 6;
+  stroke-dasharray: 19;
+  stroke-dashoffset: 19;
+}
+.btn-radio svg path.outer {
+  stroke-width: 2;
+  stroke-dasharray: 57;
+  stroke-dashoffset: 57;
+}
+.btn-radio input {
+  display: none;
+}
+.btn-radio input:checked + svg path {
+  transition: all 0.4s ease;
+}
+.btn-radio input:checked + svg path.inner {
+  stroke-dashoffset: 38;
+  transition-delay: 0.3s;
+}
+.btn-radio input:checked + svg path.outer {
+  stroke-dashoffset: 0;
+}
+.btn-radio span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #626a6f;
+}
+
+th {
+    background: #8a97a0!important;
+    color: white;
+}
+
+.td-header {
+    background: #e8eeef;
+}
+
+td, th {
+    text-align: center;
+}
+
+.modal-header {
+    color: white;
+    font-weight: bold;
+    background-color: #6e0d67;
+    border-color: #b129a7;
+}
+
+.modal-body {
+    font-size: 1em;
+}
+
+.modal-body strong {
+    font-size: 1em;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+.dialog {
+  position: absolute;
+  text-align: center;
+  background: #9170e4;
+  margin: 21px 0 4px -59px;
+  display: inline-block!important;
+  width: 256px;
+  box-shadow: 0px 0px 8px rgba(68, 140, 160, 0.5);
+}
+.dialog:after,
+.dialog:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.dialog:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #9170e4;
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+.dialog:before {
+  border-color: rgba(170, 170, 170, 0);
+  border-width: 16px;
+  left: 50%;
+  margin-left: -16px;
+}
+.dialog .title {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #9170e4;
+  border-width: 0px 0px 1px 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background: #9170e4;
+  box-shadow: 0px 1px 4px rgba(68, 120, 160, 0.1);
+  font-size: 16px;
+  line-height:2em;
+}
+.dialog .title:first-child {
+  margin-top: -4px;
+}
+
+.add.active {
+  margin:0 98px;
+  transition: box-shadow .2s linear, margin .3s linear;
+}
+
+#menu-top.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+input::-webkit-calendar-picker-indicator,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.hide-form {
+     visibility: hidden;
+}
+
+.btn-action {
+     width: 100%;
+     margin-bottom: 2%;
+     border-radius: 0%;
+}
+
+/* INPUT FILE */
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.75rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #941b8b;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #6e0d67;
+}
+
+.inputfile-4 + label figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #941b8b;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #6e0d67;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+
+
+/* style 5 */
+
+.inputfile-5 + label {
+    color: #d3394c;
+}
+
+.inputfile-5:focus + label,
+.inputfile-5.has-focus + label,
+.inputfile-5 + label:hover {
+    color: #722040;
+}
+
+.inputfile-5 + label figure {
+    width: 100px;
+    height: 135px;
+    background-color: #75146e;
+    display: block;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto 10px;
+}
+
+.inputfile-5:focus + label figure,
+.inputfile-5.has-focus + label figure,
+.inputfile-5 + label:hover figure {
+    background-color: #6e0d67;
+}
+
+.inputfile-5 + label figure::before,
+.inputfile-5 + label figure::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inputfile-5 + label figure::before {
+    border-top: 20px solid #dfc8ca;
+    border-left: 20px solid transparent;
+}
+
+.inputfile-5 + label figure::after {
+    border-bottom: 20px solid #722040;
+    border-right: 20px solid transparent;
+}
+
+.inputfile-5:focus + label figure::after,
+.inputfile-5.has-focus + label figure::after,
+.inputfile-5 + label:hover figure::after {
+    border-bottom-color: #d3394c;
+}
+
+.inputfile-5 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+p {
+    font-size: 1.2em;
+}
